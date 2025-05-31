@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Sir Charles Personal Website</title>
-</head>
-<body>
 
-    <header>
-        <h1>Dancan Odhiambo</h1>
-        <p>Educator | Software Engineer</p>
-    <style>
+      <style>
+      
         body {
+          background-color: aliceblue;
           font-family: Arial, sans-serif; 
           margin: 0; 
           padding: 0;  
@@ -24,14 +21,26 @@
         }
 
         nav {
-            margin: 0 1rem;
-            color: #333;
-            text-decoration: none;
+            background: #f1f1f1;
+            padding: 1rem;
+            text-align: left;
+            
+        }
+        nav button{
+            margin: 0 0.5rem;
+            padding: 0.5rem 1rem;
+            background-color: #68ac90;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: backround-color 0.3sec;
         }
 
-        section {
-            padding: 2rem;
-        }
+        nav button: :hover { background-color: blue;}
+
+
+        section { padding: 2rem;}
 
         footer {
             background: #333;
@@ -40,9 +49,20 @@
             padding: 1rem;
         }
     </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dancan Odhiambo</h1>
+        <p>Educator | Software Engineer</p>
+  
     </header>
     
     <nav>
+        <button onclick="location.href='#about'"> About Me</button>
+        <button onclick="location.href='#skills'"> Skills</button>
+        <button onclick="location.href='#portfolio'"> Portfolio</button>
+        <button onclick="location.href='#contact'"> Contact</button>
 
         <a href="#about">About Me</a>
         <a href="#skills">Skills</a>
@@ -51,8 +71,9 @@
 
     </nav>
     <section id="about">
-        <h2>About Me</h2> <img src="/Photo1.jpg" alt="Profile Photo" width="200px">
+        <h2>About Me</h2> <img src="/Photo1.jpg" alt="Profile Photo" width="200px"> <figcaption>Profile Photo | <Picture>Dancan</Picture></figcaption>
         <p>A passionate educator and software developer with global experience in IB, AP, AS/A-Levels Mathematics and Economics, and Software Development</p>
+        <button onclick="alert ('More About Me')">Learn More</button>
     </section>
 
     <section id="skills">
@@ -61,16 +82,19 @@
             <li>HTML, CSS, JavaSript, React</li>
             <li>IBDP, AP Calculus, STEM</li>
         </ul>
+         <button onclick="alert ('Exploring Skills')">Explore Skills</button>
     </section>
 
     <section id="portfolio">
         <h2>Portfolio</h2>
         <p>Projects and teaching experience across many countries including Kenya, Rwanda, Botswana, Uganda, Saudi Arabia, Mali, and Cameroon.</p>
+         <button onclick="alert ('Viewing Portfolio')">View Projects</button>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: dancanodhiambo@gmail.com | Phone: +254757126260</p>
+         <button onclick="alert ('Sending Email')">Send Message</button>
     </section>
 
     <footer>
