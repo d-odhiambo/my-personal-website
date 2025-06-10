@@ -3,106 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Photo4.png">
+    <link rel="stylesheet" href="styles.css">
     <title>Sir Charles Personal Website</title>
 
-      <style>
-      
-        body {
-          background-color: aliceblue;
-          font-family: Arial, sans-serif; 
-          margin: 0; 
-          padding: 0;  
-        }
-        header {
-            background: #4277c7;
-            color: whitesmoke;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        nav {
-            background: #f1f1f1;
-            padding: 1rem;
-            text-align: left;
-            
-        }
-        nav button{
-            margin: 0 0.5rem;
-            padding: 0.5rem 1rem;
-            background-color: #68ac90;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: backround-color 0.3sec;
-        }
-
-        nav button: :hover { background-color: blue;}
-
-
-        section { padding: 2rem;}
-
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-    </style>
 </head>
 <body>
+<!--This is the Header Section-->
+<div>
 
     <header>
         <h1>Dancan Odhiambo</h1>
         <p>Educator | Software Engineer</p>
   
     </header>
-    
-    <nav>
-        <button onclick="location.href='#about'"> About Me</button>
-        <button onclick="location.href='#skills'"> Skills</button>
-        <button onclick="location.href='#portfolio'"> Portfolio</button>
-        <button onclick="location.href='#contact'"> Contact</button>
-
+    <br>
+    <nav class="nav-box">
         <a href="#about">About Me</a>
         <a href="#skills">Skills</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
-
     </nav>
+</div>
+<hr>
+
+<!--This is the Main Body Section-->
+<div>
     <section id="about">
-        <h2>About Me</h2> <img src="/Photo1.jpg" alt="Profile Photo" width="200px"> <figcaption>Profile Photo | <Picture>Dancan</Picture></figcaption>
-        <p>A passionate educator and software developer with global experience in IB, AP, AS/A-Levels Mathematics and Economics, and Software Development</p>
-        <button onclick="alert ('More About Me')">Learn More</button>
+    <div class="container">
+        <h2>About Me</h2>
+        <img src="/Photo1.jpg" alt="Profile Photo" width="200px"> <figcaption>Profile Photo | <Picture>Dancan</Picture></figcaption>
+        <p>A passionate educator and software developer with global experience in IB, AP, AS/A-Levels Mathematics and Economics, and Software Development. I am an innovative mathematics and STEM teacher with 19-year background 
+instructing students. I have expertise in classroom oversight, course planning and 
+behavior management in addition to being successful at collaborating with teachers, 
+administrative leaders and support specialists to meet individual student needs. I am a 
+professional with resourceful and engaging teaching style, caring, hardworking, 
+exceptional work ethic and commitment to cultivating productive learning 
+environments to drive student progress and comprehension. I am a patient certified 
+STEM teacher and coach committed to engaging students and enhancing learning by 
+applying different instructional techniques and activity plans to deliver important 
+knowledge.</p>
+    </div>
     </section>
+    
+    <hr>
 
     <section id="skills">
+    <div class="container">
         <h2>Skills</h2>
+        
         <ul>
-            <li>HTML, CSS, JavaSript, React</li>
-            <li>IBDP, AP Calculus, STEM</li>
-        </ul>
-         <button onclick="alert ('Exploring Skills')">Explore Skills</button>
-    </section>
+            <li>HTML
+                <ul>
+                    <li>Developed semantic HTML5 markup to ensure accessibility and SEO readiness</li>
+                    <li>Created interactive and accessible forms with native validation and ARIA roles</li>
+                    <li>Implemented clean, structured content using semantic tags for screen reader compatibility</li>
+                    <li>Integrated HTML templates into React and Django-based applications</li>
+                    <li>Optimized site performance by structuring efficient HTML content hierarchy</li>
+                </ul>
+            </li>
+            
+            <li>CSS
+                <ul>
+                    <li>Designed and implemented responsive layouts using Flexbox and CSS Grid</li>
+                    <li>Built custom reusable components with SCSS and BEM conventions</li>
+                    <li>Applied CSS animations and transitions to enhance UI interactivity</li>
+                    <li>Used media queries and relative units to optimize mobile-first designs</li>
+                    <li>Integrated Tailwind CSS in React projects for rapid prototyping and theming</li>
+                </ul>
+            </li>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Projects and teaching experience across many countries including Kenya, Rwanda, Botswana, Uganda, Saudi Arabia, Mali, and Cameroon.</p>
-         <button onclick="alert ('Viewing Portfolio')">View Projects</button>
+            <li>JavaScript
+                <ul>
+                    <li>Developed interactive user interfaces using vanilla JavaScript and DOM manipulation</li>
+                    <li>Used ES6+ features such as arrow functions, destructuring, and template literals to write clean, modern code</li>
+                    <li>Fetched and rendered API data asynchronously using `fetch()` and `async/await`</li>
+                    <li>Built form validation logic with event listeners and dynamic UI feedback</li>
+                    <li>Refactored legacy code for performance and modularity using JavaScript best practices</li>
+                </ul>
+            </li>
+
+            <li>Python
+                <ul>
+                    <li>Built modular Python scripts for automating data collection and cleaning tasks</li>
+                    <li>Designed and implemented RESTful APIs using Flask and FastAPI</li>
+                    <li>Used Pandas and NumPy for data wrangling and statistical analysis</li>
+                    <li>Applied OOP principles to build scalable backend components</li>
+                    <li>Wrote unit tests using `unittest` and `pytest` to ensure code reliability</li>
+                </ul>
+            </li>
+                
+            </ul>
+        </ul>
+    </div>
     </section>
+    <hr>
+
+    
+    <section id="portfolio">
+    <div>
+        <h2>Portfolio</h2>
+        <ul>
+            <li>
+                <h3>Professional Teaching Background</h3>
+                <p>As an experienced international educator, I have taught high school Mathematics, Economics, and STEM in diverse cultural and academic environments, including IB Diploma Programme (DP), Advanced Placement (AP), and US Common Core frameworks. My journey has taken me through institutions like Kampala International School Uganda and American International School of Bamako, where I've taught courses ranging from AP Calculus and AP Statistics to IBDP Economics and Precalculus. I have also led departments, mentored teachers, and supported inclusive education initiatives through work with special needs students in Nairobi.</p>
+
+            </li>
+
+            <li>
+                <h3>Inquiry-Based and Interdisciplinary Learning</h3>
+                <p>I'm a strong advocate of inquiry-based learning and interdisciplinary education that connects math, economics, and real-world problem solving. In my classrooms, students engage in meaningful projects that build critical thinking, collaboration, and creativity—whether it's modeling economic systems using algebra or applying calculus to environmental issues. I also champion the integration of technology in teaching, using tools like Desmos, GeoGebra, and Python-based simulations to enhance student understanding.</p>
+            </li>
+
+            <li>
+                <h3>Technical and Software Development Skills</h3>
+                <p>In addition to my teaching background, I bring full-stack software development experience, with a strong foundation in HTML, CSS, JavaScript, and Python. I design educational tools, automate workflows, and build interactive web applications that align with curricular goals. My technical skillset enables me to bridge the gap between traditional education and modern technology—creating engaging digital experiences for learners and improving school operations through smart automation.</p>
+            </li>
+
+            <li>
+                <h3>Vision and Collaboration</h3>
+                <p>Whether in the classroom or coding a solution, I believe in the power of purposeful learning and thoughtful design. My goal is to contribute to institutions and projects that value innovation, equity, and student-centered growth. I'm open to collaborating with educators, schools, and organizations that seek to blend academic rigor with technology-driven approaches to learning.</p>
+            </li>
+        </ul>
+    </div>
+    </section>
+    <hr>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: dancanodhiambo@gmail.com | Phone: +254757126260</p>
-         <button onclick="alert ('Sending Email')">Send Message</button>
+    <div>
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:dancanodhiambo@gmail.com">dancanodhiambo@gmail.com</a></p>
+        <p>Phone: <a href="tel:+254757126260">+254757126260</a></p>
+        <p>Location: Nairobi, Kenya</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/dancan-odhiambo" target="_blank">linkedin.com/in/dancan-odhiambo</a></p>
+        <p>GitHub: <a href="https://github.com/d-odhiambo" target="_blank">github.com/d-odhiambo</a></p>
+
+    
+        <address>
+        Email: <a href="mailto:dancanodhiambo@gmail.com">dancanodhiambo@gmail.com</a><br>
+        Phone: <a href="tel:+254757126260">+254757126260</a><br>
+        Nairobi, Kenya
+        </address>
+    </div>
     </section>
-
-    <footer>
-        <p>&copy; 2025 Dancan Odhiambo</p>
-    </footer>
-
-
-
-
+</div>
+<hr>
+<!--This is the Footer Section-->
+<div>
+<footer>
+    <p>&copy; 2025 Dancan Odhiambo</p>
+</footer>
+</div>
 </body>
 </html>
